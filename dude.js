@@ -10,7 +10,7 @@ class Dude {
 
     update() {
         this.x += this.game.clockTick * this.speed;
-        this.x > 1024 ? this.x = 0 : null; // Resets the X position to the left side of the screen if it goes off the right side
+        this.x > 1440 ? this.x = -48 : null; // Resets the X position to the left side of the screen if it goes off the right side
     };
 
     draw(ctx) {
