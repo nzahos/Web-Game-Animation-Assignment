@@ -3,6 +3,7 @@ const gameEngine = new GameEngine();
 const ASSET_MANAGER = new AssetManager();
 
 ASSET_MANAGER.queueDownload("./sprites/dude-spritesheet-walk.png");
+ASSET_MANAGER.queueDownload("./sprites/dude-spritesheet-stand.png");
 ASSET_MANAGER.queueDownload("./sprites/grass.png");
 
 ASSET_MANAGER.downloadAll(() => {
