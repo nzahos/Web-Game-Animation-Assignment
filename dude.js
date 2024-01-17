@@ -20,8 +20,10 @@ class Dude {
 
     update() {
         // Calculate the delta time which is defined as the time passed in seconds since the last frame.
+        // We will use this to calculate how much we should move the character on this frame.
         const delta = this.game.clockTick * this.movementSpeed;
-        this.isMoving = false; // Reset the isMoving flag
+
+        this.isMoving = false; // Reset the isMoving flag to false
 
         // Update the world position based on key presses
         if (this.game.keys["w"]) {
