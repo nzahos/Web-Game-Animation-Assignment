@@ -85,29 +85,6 @@ class GameEngine {
     };
 
     draw() {
-        /* OLD WAY OF DRAWING
-        // Clear the whole canvas with transparent color (rgba(0, 0, 0, 0))
-        //this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
-
-        // Get the ground texture from the asset manager
-        const grass = ASSET_MANAGER.getAsset("./sprites/grass.png");    // Map 1 is grasslands so uses grass texture.
-
-        // Define the scale factor of the ground texture (e.g., 2 for twice as large)
-        const scaleFactor = 3;
-
-        // Repeat the grass texture to cover the whole canvas
-        for (let x = 0; x < this.ctx.canvas.width; x += grass.width * scaleFactor) {
-            for (let y = 0; y < this.ctx.canvas.height; y += grass.height * scaleFactor) {
-                // Draw the grass image scaled
-                this.ctx.drawImage(grass, 0, 0, grass.width, grass.height, x, y, grass.width * scaleFactor, grass.height * scaleFactor);
-            }
-        }
-
-        // Draw game entities (latest things first)
-        for (let i = this.entities.length - 1; i >= 0; i--) {
-            this.entities[i].draw(this.ctx, this);
-        }*/
-
         // Clear the canvas
         this.ctx.clearRect(0, 0, this.ctx.canvas.width, this.ctx.canvas.height);
 

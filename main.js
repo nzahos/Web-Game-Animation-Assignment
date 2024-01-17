@@ -11,9 +11,9 @@ ASSET_MANAGER.downloadAll(() => {
 	const ctx = canvas.getContext("2d");
 	ctx.imageSmoothingEnabled = false;	// Prevents the image from blurring when scaled
 
-	gameEngine.init(ctx);
+	gameEngine.init(ctx);	// Initialize the game engine given the canvas context
 
-	gameEngine.addEntity(new Dude(gameEngine));
+	gameEngine.addEntity(new Dude(gameEngine));	// Add the player character 'Dude' to the game engine
 
-	gameEngine.start();
+	gameEngine.start();	// Start the game engine
 });
