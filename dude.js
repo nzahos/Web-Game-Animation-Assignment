@@ -2,12 +2,13 @@
 class Dude {
     constructor(game) {
         this.game = game;
+
+        // Define the animator for the character. The parameters are: spritesheet, xStart, yStart, width, height, frameCount, frameDuration
         this.animator = new Animator(ASSET_MANAGER.getAsset("./sprites/dude-spritesheet-walk.png"), 0, 0, 48, 55, 4, 0.2);
 
-        this.yOffset = -25; // Offsets the character upwards from the center of the canvas
+        this.yOffset = -25; // Offsets the character upwards from the center of the canvas (you see this used in the draw() method below)
 
-        // Calculate the middle of the canvas, then adjust by half of the character's width and height
-        // to center the character
+        // Calculate the middle of the canvas, then adjust by half of the character's width and height to center the character
         this.x = (game.ctx.canvas.width / 2) - (this.animator.width * 1.5 / 2); 
         this.y = (game.ctx.canvas.height / 2) - (this.animator.height * 1.5 / 2); 
 

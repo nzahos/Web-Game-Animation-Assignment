@@ -47,10 +47,10 @@ class Animator {
 
     // This method should be called when we want to change to a new spritesheet animation
     changeSpritesheet(newSpritesheet, newFrameCount, newFrameDuration) {
-        this.spritesheet = newSpritesheet;
-        this.frameCount = newFrameCount;
-        this.frameDuration = newFrameDuration;
-        this.totalTime = this.frameCount * this.frameDuration;
+        this.spritesheet = newSpritesheet; // Change the spritesheet
+        this.frameCount = newFrameCount; // Change the frame count
+        this.frameDuration = newFrameDuration; // Change the frame duration
+        this.totalTime = this.frameCount * this.frameDuration;  // Recalculate the total time
         this.elapsedTime = 0; // Reset animation timing
     }
 };
