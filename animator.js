@@ -1,3 +1,4 @@
+// This is the animator class for dude.js it really just loops a walking animation for him and thats it for now
 class Animator {
     constructor(spritesheet, xStart, yStart, width, height, frameCount, frameDuration) {
         Object.assign(this, { spritesheet, xStart, yStart, width, height, frameCount, frameDuration }); // Copy the parameters into the object
